@@ -54,7 +54,15 @@
             text-align: center;
         }
         body{
-            background-image: url('OfficeImage4.jpg');
+            background-image: url('https://webuserblog.com/wp-content/uploads/2016/08/What-is-the-ideal-planning-of-office-space.jpg');
+        }
+        .choice-box{
+            border: solid black;
+            border-radius:20px;
+            margin: auto;
+            width: 200px;
+            height: 50px;
+            padding: 10px 0px 20px 10px;
         }
 
     </style>
@@ -75,10 +83,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Tax Info</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" style="background-color:rgba(224, 103, 94, 0.815)">
                 <a class="nav-link" href="#">Login</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" style="background-color:rgba(224, 103, 94, 0.815)">
                 <a class="nav-link" href="#">Sign Up</a>
               </li>
             </ul>
@@ -96,6 +104,12 @@
     <br>
     
     <form>
+    <div class="choice-box">
+        <input type="radio" id="basis">
+        <label for="basis">Monthly</label>
+        <input type="radio" id="basis">
+        <label for="basis">Yearly</label>
+    </div>
     <div class="grid-upper box1">
         <div>
             <h2> Taxable Income </h2>
@@ -115,7 +129,7 @@
             </div>
 
             <div class="text-box">
-                <h3> Transportation Alloance </h3>
+                <h3> Transportation Allowance </h3>
                 <input type="text">
             </div>
 
@@ -141,9 +155,7 @@
                 <input type="text">
             </div>
         </div>
-
     </div>
-    
     <br>
     <div class="grid-lower">
         <button> Calculate </button>                                     
@@ -155,6 +167,5 @@
         </div>
     </div>
     </form>
-
 </body>
 </html>
