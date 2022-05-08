@@ -23,6 +23,27 @@
         h2{
             text-align: center;
         }
+        .upper-div{
+            width: 400px;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            float: center;
+            border: solid black;
+            border-radius: 10px;
+            padding: 20px;
+            opacity: 0.9;
+            background: linear-gradient(130deg, #CCFFFF, #FFCCCC);
+        }
+        .inner-div{
+          width: 200px;
+          margin: auto;
+          text-align: left;
+        }
+        body{
+          background: url('https://www.movylo.com/wp-content/uploads/2022/01/aboutus-3-1024x683.jpg');
+          background-size: cover;
+        }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
@@ -46,27 +67,31 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Tax Calculator</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tax Info</a>
+              </li>
             </ul>
           </div>
         </div>
     </nav>    
 
-    <h2 style="margin-top: 50px">List of Users</h2>
-    <div class="center-box box-1" id="FirstUser">
-        <div></div>
-        <div>
-            <h3> UserName1 </h3>
-            <form>
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum perferendis, nisi amet, rerum corrupti neque fugiat optio vitae provident animi aspernatur aperiam soluta necessitatibus modi laborum nihil, at beatae. At.</p>
-                    <input type="radio"> Approve
-                    <br>
-                    <input type="radio"> Deny
-                </div>
-                <button type="submit">Submit</button>
-            </form>   
-        </div>
-        <div></div>
+    <div class="upper-div">
+      <h3 style="padding: 0px;">User List</h3>
+      
+      <div class="inner-div">
+        <hr>
+        <p>Name: </p>
+        <p>Email: </p>
+        <p>Phone number: </p>
+
+        <input type="radio"> Approve
+        <br>
+        <input type="radio"> Deny
+        <br>
+        <button type="submit">Submit</button>
+        <hr>
+      </div>
+      
     </div>
 </body>
 </html>

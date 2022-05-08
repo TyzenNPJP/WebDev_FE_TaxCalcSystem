@@ -31,9 +31,16 @@
             background: linear-gradient(130deg, #CCFFFF, #FFCCCC);
         }
         .upper-div{
-          padding: 50px;
-          opacity: 0.9;
-          background: linear-gradient(130deg, #CCFFFF, #FFCCCC);
+            width: 400px;
+            margin: auto;
+            position: relative;
+            top: 50px;
+            float: center;
+            border: solid black;
+            border-radius: 10px;
+            padding: 20px;
+            opacity: 0.9;
+            background: linear-gradient(130deg, #CCFFFF, #FFCCCC);
         }
         .topic{
           padding: 10px;
@@ -61,10 +68,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+                <a class="nav-link" href="#">Tax Calculator</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tax Calculator</a>
+                <a class="nav-link" href="#">Tax Info</a>
               </li>
             </ul>
           </div>
@@ -72,19 +79,24 @@
     </nav>
 
     <div class="topic">
-      <h2>User Dashboard</h2>
+      <h2>Admin Dashboard</h2>
+    </div>
+
+    <div class="upper-div">
+      <h3 style="padding: 0px;">Admin Details</h3>
+      <p>Name: </p>
+      <p>Email: </p>
+      <p>Phone number: </p>
     </div>
     
-    <div>
-
-    </div>
-
     <div class="box">
         <div class="boxes">
             <h3>User Management</h3>
             <hr>
             <p>Number of Users: </p>
             <p>Pending Users: </p>
+            <hr>
+            <button>Approve Users</button>
         </div>
 
         <div class="boxes">
@@ -92,6 +104,8 @@
             <hr>
             <p>NEWS this week: </p>
             <p>Total News: </p>
+            <hr>
+            <button>Add NEWS</button>
         </div>
     </div>
 </body>

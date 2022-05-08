@@ -9,7 +9,7 @@
     <style>
         h2{
             text-align: center;
-            padding-top: 100px;
+            padding-top: 50px;
         }
         h3{
             text-align: center;
@@ -20,13 +20,23 @@
             justify-content: space-around;
             width: 100%;
             height: 70%;
+            margin-top: 50px;
         }
         .boxes{
             border: solid black;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 10px 10px;
-            opacity: 0.8;
+            opacity: 0.9;
+            background: linear-gradient(130deg, #CCFFFF, #FFCCCC);
+        }
+        .topic{
+          padding: 10px;
+          margin: auto;
+          background: linear-gradient(130deg, #CCFFFF, #FFCCCC);
+        }
+        body{
+          background: url('http://itsystem.az/wp-content/uploads/2017/12/7.jpg');
         }
     </style>
 
@@ -56,7 +66,10 @@
         </div>
     </nav>
 
-    <h2>Admin Dashboard</h2>
+    <div class="topic">
+      <h2>Admin Dashboard</h2>
+    </div>
+    
     <div class="box">
         <div class="boxes">
             <h3>User Management</h3>
@@ -71,10 +84,9 @@
             <h3>NEWS Management</h3>
             <hr>
             <p>NEWS this week: </p>
-            <p>Pending NEWS: </p>
+            <p>Total News: </p>
             <hr>
             <button>Add NEWS</button>
-            <button>Approve NEWS</button>
         </div>
     </div>
 </body>
