@@ -1,0 +1,97 @@
+<!DOCTYPE html>                                 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .center-box{
+            display: grid;
+            grid-template-columns: 35% 30% 35%;
+        }
+        .box-1{
+            border: solid black;
+            border-radius: 10px;
+            width: 30%;
+            margin: auto;
+            padding: 50px;
+        }
+        div{
+            text-align:center;}
+        h2{
+            text-align: center;
+        }
+        .upper-div{
+            width: 400px;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            float: center;
+            border: solid black;
+            border-radius: 10px;
+            padding: 20px;
+            opacity: 0.9;
+            background: linear-gradient(130deg, #CCFFFF, #FFCCCC);
+        }
+        .inner-div{
+          width: 200px;
+          margin: auto;
+          text-align: left;
+        }
+        body{
+          background: url('https://www.movylo.com/wp-content/uploads/2022/01/aboutus-3-1024x683.jpg');
+          background-size: cover;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="float: right; position: fixed; top:0px; right: 0px;">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tax Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tax Info</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>    
+
+    <div class="upper-div">
+      <h3 style="padding: 0px;">User List</h3>
+      
+      <div class="inner-div">
+        <hr>
+        <p>Name: </p>
+        <p>Email: </p>
+        <p>Phone number: </p>
+
+        <input type="radio"> Approve
+        <br>
+        <input type="radio"> Deny
+        <br>
+        <button type="submit">Submit</button>
+        <hr>
+      </div>
+      
+    </div>
+</body>
+</html>
