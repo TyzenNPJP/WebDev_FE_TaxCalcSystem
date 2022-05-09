@@ -14,24 +14,35 @@
             display: grid;
             grid-template-columns: 50% 50%;
             opacity: 0.8;
-            box-shadow: 10px 10px 10px;
         }
         .grid-lower{
             width: 100%;
             display: grid;
             grid-template-columns: 100%;
-            padding-left: 500px;
-            padding-right: 500px;
+            padding-left: 600px;
+            padding-right: 600px;
             padding-bottom: 20px;
         }
         .div-lower{
             padding: 20px 100px 20px 100px;
         }
         .box1{
-            background-color: gray;
+            background-color: rgb(245, 178, 168);
             border: 5px;
             border-radius: 25px;
             border-style: solid;
+            width: 500px;
+            margin: auto;
+        }
+        .box2{
+            background: linear-gradient(130deg, #CCFFFF, #FFCCCC);
+            width: 1000px;
+            border: 5px;
+            border-radius: 25px;
+            border-style: solid;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 10px 10px 10px;
         }
         .text-box{
             display: grid;
@@ -45,11 +56,11 @@
         }
         h2{
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 26px;
+            font-size: 22px;
             text-align: center;
         }
         h3{
-            font-size: 22px;
+            font-size: 18px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: center;
         }
@@ -103,6 +114,7 @@
     </div>
     <br>
     
+    <div class="box2">
     <form>
     <div class="choice-box">
         <input type="radio" id="basis">
@@ -110,9 +122,10 @@
         <input type="radio" id="basis">
         <label for="basis">Unmarried</label>
     </div>
-    <div class="grid-upper box1">
+    <div class="grid-upper">
         <div>
             <h2> Taxable Income </h2>
+            <hr>
             <div class="text-box">
                 <h3> Monthly Salary</h3>
                 <input type="text">
@@ -146,6 +159,7 @@
 
         <div>
             <h2> Deductibles </h2>
+            <hr>
             <div class="text-box">
                 <h3> Medical Insurance</h3>
                 <input type="text">
@@ -156,11 +170,13 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
     <br>
     <div class="grid-lower">
         <button> Calculate </button>                                     
     </div>
-    <div class="grid-lower">
+    <div style="margin: auto; width: 500px;">
         <div class="text-box box1">
             <h3> Income Tax: </h3>
             <input type="text">
